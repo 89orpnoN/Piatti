@@ -9,26 +9,35 @@ namespace Piatti
     public class SecondoPiatto : Piatto
     {
 
-        string ComboBox = "SecondoPiattoBox";
-        string ImgBox = "SecondoPiattoPicture";
+
     }
 
     public class unaSalsiccia : SecondoPiatto
     {
-        const string nome = "Salsiccia";
-        string immagine = @"Img\" + nome;
+        public unaSalsiccia() {
+            nome = "Salsiccia";
+            immagine = $@"Img\{nome}.jpeg";
+        }  
 
     }
 
     public class DueSalsiccie : SecondoPiatto
     {
-        const string nome = "2 Salsiccie";
-        string immagine = @"Img\" + nome;
+
+        public DueSalsiccie()
+        {
+            nome = "2 Salsiccie";
+            immagine = $@"Img\{nome}.png";
+        }
     }
 
     public class TreSalsiccie : SecondoPiatto
     {
-        const string nome = "3 Salsiccie";
-        string immagine = @"Img\" + nome;
+
+        public TreSalsiccie()
+        {
+            nome = "3 Salsiccie";
+            immagine = $@"Img\{nome}.png";
+        }
     }
 }

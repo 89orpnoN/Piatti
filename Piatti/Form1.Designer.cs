@@ -57,6 +57,7 @@
             SecondoPiattoBox.TabIndex = 2;
             SecondoPiattoBox.Text = "Niente";
             SecondoPiattoBox.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            SecondoPiattoBox.TextChanged += SecondoPiattoBox_TextChanged;
             // 
             // tableLayoutPanel1
             // 
@@ -99,6 +100,7 @@
             DessertBox.TabIndex = 4;
             DessertBox.Text = "Niente";
             DessertBox.SelectedIndexChanged += DessertBox_SelectedIndexChanged;
+            DessertBox.TextUpdate += DessertBox_TextUpdate;
             // 
             // groupBox2
             // 
@@ -119,6 +121,7 @@
             PrimoPiattoBox.Size = new Size(150, 23);
             PrimoPiattoBox.TabIndex = 3;
             PrimoPiattoBox.Text = "Niente";
+            PrimoPiattoBox.TextChanged += PrimoPiattoBox_TextChanged;
             // 
             // groupBox1
             // 
@@ -136,6 +139,7 @@
             DessertPicture.Location = new Point(534, 63);
             DessertPicture.Name = "DessertPicture";
             DessertPicture.Size = new Size(263, 384);
+            DessertPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             DessertPicture.TabIndex = 7;
             DessertPicture.TabStop = false;
             // 
@@ -147,6 +151,7 @@
             SecondoPiattoPicture.Size = new Size(259, 384);
             SecondoPiattoPicture.TabIndex = 5;
             SecondoPiattoPicture.TabStop = false;
+            SecondoPiattoPicture.Click += SecondoPiattoPicture_Click;
             // 
             // PrimoPiattoPicture
             // 
@@ -154,6 +159,7 @@
             PrimoPiattoPicture.Location = new Point(3, 63);
             PrimoPiattoPicture.Name = "PrimoPiattoPicture";
             PrimoPiattoPicture.Size = new Size(260, 384);
+            PrimoPiattoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             PrimoPiattoPicture.TabIndex = 6;
             PrimoPiattoPicture.TabStop = false;
             // 

@@ -8,28 +8,35 @@ namespace Piatti
 {
     public class PrimoPiatto : Piatto
     {
-        string ComboBox = "PrimoPiattoBox" ;
-        string ImgBox = "PrimoPiattoPicture";
-    }
-
-    public class Spaghetti : Piatto
-    {
-        const string nome = "Spaghetti";
-        string immagine = @"Img\" + nome;
 
     }
 
-    public class SpaghettiF : Piatto
+    public class Spaghetti : PrimoPiatto
     {
-        const string nome = "Spaghetti Freddi";
-        string immagine = @"Img\" + nome;
+        public Spaghetti() { 
+            nome = "Spaghetti";
+            immagine = $@"Img\{nome}.png";
+        }
+       
 
     }
 
-    public class SpaghettiC : Piatto
+    public class SpaghettiF : PrimoPiatto
     {
-        const string nome = "Spaghetti Caldi";
-        string immagine = @"Img\" + nome;
+        public SpaghettiF()
+        {
+            nome = "Spaghetti Freddi";
+            immagine = $@"Img\{nome}.png";
+        }
+    }
+
+    public class SpaghettiC : PrimoPiatto
+    {
+        public SpaghettiC()
+        {
+            nome = "Spaghetti Caldi";
+            immagine = $@"Img\{nome}.png";
+        }
 
     }
 

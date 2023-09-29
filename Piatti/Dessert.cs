@@ -8,7 +8,32 @@ namespace Piatti
 {
     public class Dessert : Piatto
     {
-        string ComboBox = "DessertBox";
-        string ImgBox = "DessertPicture";
+
+    }
+
+    public class Zucchero : Dessert
+    {
+        public Zucchero() {
+            nome = "Zucchero";
+            immagine = $@"Img\{nome}.png";
+        }
+    }
+
+    public class Cacioepepe : Dessert
+    {
+        public Cacioepepe()
+        {
+            nome = "Cacio e pepe";
+            immagine = $@"Img\{nome}.png";
+        }
+    }
+
+    public class Pancakes : Dessert
+    {
+        public Pancakes()
+        {
+            nome = "Pancakes";
+            immagine = $@"Img\{nome}.png";
+        }
     }
 }

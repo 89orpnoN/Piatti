@@ -9,17 +9,16 @@ namespace Piatti
 {
     public class Piatto
     {
-        string immagine = "inserire piatto vuoto";
-        string nome;
-        string ComboBox;
-        string ImgBox;
+        public string immagine = "inserire piatto vuoto";
+        public string nome;
         void impiatta()
         {
 
         }
+
         public override string ToString()
         {
-            return nome;
+            return this.nome;
         }
     }
 }

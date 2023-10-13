@@ -21,7 +21,6 @@ C:\Users\Nonpro98\source\repos\Piatti\Piatti\bin\Debug\net6.0-windows\Piatti.run
 C:\Users\Nonpro98\source\repos\Piatti\Piatti\bin\Debug\net6.0-windows\Piatti.dll
 C:\Users\Nonpro98\source\repos\Piatti\Piatti\bin\Debug\net6.0-windows\Piatti.pdb
 C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.csproj.AssemblyReference.cache
-C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.Form1.resources
 C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.csproj.GenerateResource.cache
 C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.AssemblyInfoInputs.cache
@@ -32,3 +31,7 @@ C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\refint\Pia
 C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.pdb
 C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.genruntimeconfig.cache
 C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\ref\Piatti.dll
+C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.Menu.resources
+C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.MenuAsporto.resources
+C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.Principale.resources
+C:\Users\Nonpro98\source\repos\Piatti\Piatti\obj\Debug\net6.0-windows\Piatti.Properties.Resources.resources

@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Piatti"
   ],
-  "SelectedNode": "\\Piatti.sln",
+  "SelectedNode": "\\Piatti\\Piatti.csproj",
   "PreviewInSolutionExplorer": false
 }

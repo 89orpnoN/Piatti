@@ -12,9 +12,26 @@ namespace Piatti
 {
     public partial class Principale : Form
     {
+        public Form RunForm { get; private set; }
         public Principale()
         {
             InitializeComponent();
         }
+
+        private void MenuSummon_Click(object sender, EventArgs e)
+        {
+            RunForm = (Form)new Menu();
+            Close();
+        }
+
+        private void MenuAsportoSummon_Click(object sender, EventArgs e)
+        {
+            RunForm = (Form)new MenuAsporto();
+            Close();
+        }
+
+
     }
+
+
 }

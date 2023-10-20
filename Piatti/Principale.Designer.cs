@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principale));
             splitContainer1 = new SplitContainer();
+            tableLayoutPanel4 = new TableLayoutPanel();
+            TrattoriaWall = new PictureBox();
+            label1 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             MenuSummon = new Button();
@@ -37,20 +40,17 @@
             tableLayoutPanel3 = new TableLayoutPanel();
             MenuAsportoSummon = new Button();
             pictureBox2 = new PictureBox();
-            tableLayoutPanel4 = new TableLayoutPanel();
-            TrattoriaWall = new PictureBox();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)TrattoriaWall).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)TrattoriaWall).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -69,6 +69,45 @@
             splitContainer1.Size = new Size(800, 450);
             splitContainer1.SplitterDistance = 266;
             splitContainer1.TabIndex = 0;
+            // 
+            // tableLayoutPanel4
+            // 
+            tableLayoutPanel4.ColumnCount = 1;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.Controls.Add(TrattoriaWall, 0, 1);
+            tableLayoutPanel4.Controls.Add(label1, 0, 0);
+            tableLayoutPanel4.Dock = DockStyle.Fill;
+            tableLayoutPanel4.Location = new Point(0, 0);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 2;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.Size = new Size(266, 450);
+            tableLayoutPanel4.TabIndex = 0;
+            // 
+            // TrattoriaWall
+            // 
+            TrattoriaWall.BorderStyle = BorderStyle.FixedSingle;
+            TrattoriaWall.Image = (Image)resources.GetObject("TrattoriaWall.Image");
+            TrattoriaWall.Location = new Point(3, 73);
+            TrattoriaWall.Name = "TrattoriaWall";
+            TrattoriaWall.Size = new Size(260, 374);
+            TrattoriaWall.SizeMode = PictureBoxSizeMode.StretchImage;
+            TrattoriaWall.TabIndex = 1;
+            TrattoriaWall.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Dock = DockStyle.Fill;
+            label1.Font = new Font("Old English Text MT", 22F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Highlight;
+            label1.Location = new Point(3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(260, 70);
+            label1.TabIndex = 2;
+            label1.Text = "Trattoria\r\nAntiSabrina";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -159,45 +198,6 @@
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
-            // tableLayoutPanel4
-            // 
-            tableLayoutPanel4.ColumnCount = 1;
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.Controls.Add(TrattoriaWall, 0, 1);
-            tableLayoutPanel4.Controls.Add(label1, 0, 0);
-            tableLayoutPanel4.Dock = DockStyle.Fill;
-            tableLayoutPanel4.Location = new Point(0, 0);
-            tableLayoutPanel4.Name = "tableLayoutPanel4";
-            tableLayoutPanel4.RowCount = 2;
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.Size = new Size(266, 450);
-            tableLayoutPanel4.TabIndex = 0;
-            // 
-            // TrattoriaWall
-            // 
-            TrattoriaWall.BorderStyle = BorderStyle.FixedSingle;
-            TrattoriaWall.Image = (Image)resources.GetObject("TrattoriaWall.Image");
-            TrattoriaWall.Location = new Point(3, 73);
-            TrattoriaWall.Name = "TrattoriaWall";
-            TrattoriaWall.Size = new Size(260, 374);
-            TrattoriaWall.SizeMode = PictureBoxSizeMode.StretchImage;
-            TrattoriaWall.TabIndex = 1;
-            TrattoriaWall.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Dock = DockStyle.Fill;
-            label1.Font = new Font("Old English Text MT", 22F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Highlight;
-            label1.Location = new Point(3, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(260, 70);
-            label1.TabIndex = 2;
-            label1.Text = "Trattoria\r\nAntiSabrina";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // Principale
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -211,14 +211,14 @@
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            tableLayoutPanel4.ResumeLayout(false);
+            tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)TrattoriaWall).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            tableLayoutPanel4.ResumeLayout(false);
-            tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)TrattoriaWall).EndInit();
             ResumeLayout(false);
         }
 

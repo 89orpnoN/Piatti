@@ -408,6 +408,7 @@
             PrimoPiattoBox.Size = new Size(252, 23);
             PrimoPiattoBox.TabIndex = 3;
             PrimoPiattoBox.Text = "Niente";
+            PrimoPiattoBox.SelectedIndexChanged += PrimoPiattoBox_SelectedIndexChanged;
             PrimoPiattoBox.TextChanged += PrimoPiattoBox_TextChanged;
             // 
             // tableLayoutPanel5

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\9698022\\Source\\Repos\\Piatti\\Piatti\\Piatti.csproj": {}
+    "C:\\Users\\9698022\\source\\repos\\Piatti\\Piatti\\Piatti.csproj": {}
   },
   "projects": {
-    "C:\\Users\\9698022\\Source\\Repos\\Piatti\\Piatti\\Piatti.csproj": {
+    "C:\\Users\\9698022\\source\\repos\\Piatti\\Piatti\\Piatti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\9698022\\Source\\Repos\\Piatti\\Piatti\\Piatti.csproj",
+        "projectUniqueName": "C:\\Users\\9698022\\source\\repos\\Piatti\\Piatti\\Piatti.csproj",
         "projectName": "Piatti",
-        "projectPath": "C:\\Users\\9698022\\Source\\Repos\\Piatti\\Piatti\\Piatti.csproj",
+        "projectPath": "C:\\Users\\9698022\\source\\repos\\Piatti\\Piatti\\Piatti.csproj",
         "packagesPath": "C:\\Users\\9698022\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\9698022\\Source\\Repos\\Piatti\\Piatti\\obj\\",
+        "outputPath": "C:\\Users\\9698022\\source\\repos\\Piatti\\Piatti\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

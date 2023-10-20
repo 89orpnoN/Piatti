@@ -56,7 +56,6 @@
             SecondoPiattoBox.Size = new Size(150, 23);
             SecondoPiattoBox.TabIndex = 2;
             SecondoPiattoBox.Text = "Niente";
-            SecondoPiattoBox.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             SecondoPiattoBox.TextChanged += SecondoPiattoBox_TextChanged;
             // 
             // tableLayoutPanel1
@@ -100,7 +99,6 @@
             DessertBox.TabIndex = 4;
             DessertBox.Text = "Niente";
             DessertBox.SelectedIndexChanged += DessertBox_SelectedIndexChanged;
-            DessertBox.TextUpdate += DessertBox_TextUpdate;
             // 
             // groupBox2
             // 
@@ -151,7 +149,6 @@
             SecondoPiattoPicture.Size = new Size(259, 384);
             SecondoPiattoPicture.TabIndex = 5;
             SecondoPiattoPicture.TabStop = false;
-            SecondoPiattoPicture.Click += SecondoPiattoPicture_Click;
             // 
             // PrimoPiattoPicture
             // 
@@ -163,14 +160,14 @@
             PrimoPiattoPicture.TabIndex = 6;
             PrimoPiattoPicture.TabStop = false;
             // 
-            // Form1
+            // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(tableLayoutPanel1);
             MinimumSize = new Size(650, 200);
-            Name = "Form1";
+            Name = "Menu";
             Text = "Scegli il tuo menù";
             Load += Form1_Load;
             tableLayoutPanel1.ResumeLayout(false);

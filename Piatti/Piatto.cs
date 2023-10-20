@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Piatti
 {
-    public class Piatto
+    public abstract class Piatto : IConsegnaDomicilio
     {
         public string immagine = "inserire piatto vuoto";
         public string nome;
@@ -20,5 +20,10 @@ namespace Piatti
         {
             return this.nome;
         }
+
+        public abstract bool Asportabile();
+        public abstract int Salsetta();
+        public abstract int Sacchetti();
+
     }
 }

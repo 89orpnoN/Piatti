@@ -37,6 +37,9 @@ namespace Piatti
         readonly public static Zucchero zucchero = new Zucchero();
     }
 
-
+    public enum Salsette
+    {
+        nulla,ketchup,insalata,hamburger,toast
+    }
     
 }

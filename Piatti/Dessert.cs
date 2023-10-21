@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,10 +17,11 @@ namespace Piatti
         public Zucchero() {
             nome = "Zucchero";
             immagine = $@"Img\{nome}.png";
+            
         }
 
         public override bool Asportabile() => false;
-        public override int Salsetta() => new Random().Next(1,4);
+        public override int Salsetta() => new Random().Next(1, 4);
         public override int Sacchetti() => 0;
     }
 

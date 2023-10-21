@@ -9,7 +9,7 @@ namespace Piatti
     public interface IConsegnaDomicilio
     {
         bool Asportabile();
-        int Salsetta();
+        int Salsetta() =>0;
         int Sacchetti();
 
     }

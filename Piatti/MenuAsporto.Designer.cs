@@ -344,7 +344,7 @@
             SecondoPiattoBox.Size = new Size(252, 23);
             SecondoPiattoBox.TabIndex = 2;
             SecondoPiattoBox.Text = "Niente";
-            SecondoPiattoBox.TextChanged += SecondoPiattoBox_TextChanged;
+            SecondoPiattoBox.SelectedIndexChanged += SecondoPiattoBox_SelectedIndexChanged;
             // 
             // SecondoPiattoPicture
             // 
@@ -408,7 +408,7 @@
             PrimoPiattoBox.Size = new Size(252, 23);
             PrimoPiattoBox.TabIndex = 3;
             PrimoPiattoBox.Text = "Niente";
-            PrimoPiattoBox.TextChanged += PrimoPiattoBox_TextChanged;
+            PrimoPiattoBox.SelectedIndexChanged += PrimoPiattoBox_SelectedIndexChanged;
             // 
             // tableLayoutPanel5
             // 

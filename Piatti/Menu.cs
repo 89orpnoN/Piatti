@@ -66,7 +66,6 @@ namespace Piatti
 
         private void SecondoPiattoBox_TextChanged(object sender, EventArgs e)
         {
-
             var s = (SecondoPiatto)((System.Windows.Forms.ComboBox)sender).SelectedItem;
             secondoPiattoPicture.ImageLocation = s.immagine;
         }
@@ -76,5 +75,6 @@ namespace Piatti
             var s = (PrimoPiatto)((System.Windows.Forms.ComboBox)sender).SelectedItem;
             primoPiattoPicture.ImageLocation = s.immagine;
         }
+
     }
 }

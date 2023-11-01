@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Piatti
 {
-    public class SecondoPiatto : Piatto
+    public abstract class SecondoPiatto : Piatto
     {
 
 
@@ -17,8 +17,11 @@ namespace Piatti
         public unaSalsiccia() {
             nome = "Salsiccia";
             immagine = $@"Img\{nome}.jpeg";
-        }  
+        }
 
+        public override bool Asportabile() => true;
+        public override int Salsetta() => new Random().Next(1, 4);
+        public override int Sacchetti() => 1;
     }
 
     public class DueSalsiccie : SecondoPiatto
@@ -29,6 +32,10 @@ namespace Piatti
             nome = "2 Salsiccie";
             immagine = $@"Img\{nome}.png";
         }
+
+        public override bool Asportabile() => true;
+        public override int Salsetta() => new Random().Next(1, 4);
+        public override int Sacchetti() => 2;
     }
 
     public class TreSalsiccie : SecondoPiatto
@@ -39,5 +46,9 @@ namespace Piatti
             nome = "3 Salsiccie";
             immagine = $@"Img\{nome}.png";
         }
+
+        public override bool Asportabile() => true;
+        public override int Salsetta() => new Random().Next(1, 4);
+        public override int Sacchetti() => 3;
     }
 }

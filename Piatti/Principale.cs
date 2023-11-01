@@ -29,8 +29,6 @@ namespace Piatti
             RunForm = (Form)new MenuAsporto();
             Close();
         }
-
-
     }
 
 

@@ -68,6 +68,9 @@ namespace Piatti
         }
     }
 
-
+    public enum Salsette
+    {
+        nulla,ketchup,insalata,hamburger,toast
+    }
     
 }

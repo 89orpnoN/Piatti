@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Piatti
 {
     internal static class Program
@@ -35,6 +37,35 @@ namespace Piatti
         readonly public static Pancakes pancakes = new Pancakes();
         readonly public static Cacioepepe Cacioepep = new Cacioepepe();
         readonly public static Zucchero zucchero = new Zucchero();
+
+        public static List<PrimoPiatto> Primipiatti() { //restituisce lista con i Primipiatti contenuti in IstanzeDiPiatti
+            List<PrimoPiatto> list = new List<PrimoPiatto>();
+            list.Add(spaghettiCaldi); list.Add(spaghettiFreddi); list.Add(spaghetti);
+            return list;
+        }
+
+        public static List<SecondoPiatto> Secondipiatti()//restituisce lista con i SecondoPiatti contenuti in IstanzeDiPiatti
+        {
+            List<SecondoPiatto> list = new List<SecondoPiatto>();
+            list.Add(salsiccia); list.Add(dueSalsiccie); list.Add(treSalsiccie);
+            return list;
+        }
+
+        public static List<Dessert> Desserts()//restituisce lista con i Dessert contenuti in IstanzeDiPiatti
+        {
+            List<Dessert> list = new List<Dessert>();
+            list.Add(pancakes); list.Add(Cacioepep); list.Add(zucchero);
+            return list;
+        }
+
+        public static List<Piatto> Tutto() //pollo
+        {
+            List<Piatto> list = new List<Piatto>();
+            list.Add(spaghettiCaldi); list.Add(spaghettiFreddi); list.Add(spaghetti);
+            list.Add(salsiccia); list.Add(dueSalsiccie); list.Add(treSalsiccie);
+            list.Add(pancakes); list.Add(Cacioepep); list.Add(zucchero);
+            return list;
+        }
     }
 
 

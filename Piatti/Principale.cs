@@ -29,6 +29,11 @@ namespace Piatti
             RunForm = (Form)new MenuAsporto();
             Close();
         }
+
+        private void Principale_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

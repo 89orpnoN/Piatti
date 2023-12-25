@@ -11,9 +11,9 @@ namespace Piatti
     {
         
 
-        readonly public static Piatto Salsiccia = new Piatto("Salsiccia", @"Img\Salsiccia.jpeg", (int)TipiDiPiatto.Secondo,true, Salsette.Random());
-        readonly public static Piatto DueSalsiccie = new Piatto("Due Salsiccie", @"Img\2 Salsiccie.png", (int)TipiDiPiatto.Secondo,true, Salsette.Random());
-        readonly public static Piatto TreSalsiccie = new Piatto("Tre Salsiccia", @"Img\3 Salsiccie.png", (int)TipiDiPiatto.Secondo, true, Salsette.Random());
+        readonly public static Piatto Salsiccia = new Piatto("Salsiccia", @"Img\Salsiccia.jpeg", (int)TipiDiPiatto.Secondo,true, Salsette.Random(),1);
+        readonly public static Piatto DueSalsiccie = new Piatto("Due Salsiccie", @"Img\2 Salsiccie.png", (int)TipiDiPiatto.Secondo,true, Salsette.Random(),2);
+        readonly public static Piatto TreSalsiccie = new Piatto("Tre Salsiccia", @"Img\3 Salsiccie.png", (int)TipiDiPiatto.Secondo, true, Salsette.Random(),3);
 
         readonly public static Piatto SpaghettiCaldi = new Piatto("Spaghetti Caldi", @"Img\Spaghetti Caldi.png", (int)TipiDiPiatto.Primo,true, Salsette.Random(), 10);
         readonly public static Piatto SpaghettiFreddi = new Piatto("Spaghetti Freddi", @"Img\Spaghetti Freddi.png", (int)TipiDiPiatto.Primo); 

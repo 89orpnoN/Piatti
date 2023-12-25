@@ -59,6 +59,7 @@
             groupBox4 = new GroupBox();
             PrimoPiattoSalsaText = new Label();
             PrimoPiattoPicture = new PictureBox();
+            Conferma = new Button();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer3).BeginInit();
             splitContainer3.Panel1.SuspendLayout();
@@ -95,25 +96,26 @@
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50.13477F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(splitContainer3, 0, 2);
             tableLayoutPanel1.Controls.Add(splitContainer2, 0, 1);
             tableLayoutPanel1.Controls.Add(splitContainer1, 0, 0);
+            tableLayoutPanel1.Controls.Add(Conferma, 0, 3);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
+            tableLayoutPanel1.RowCount = 4;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(742, 443);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333359F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333359F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tableLayoutPanel1.Size = new Size(742, 440);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // splitContainer3
             // 
             splitContainer3.Dock = DockStyle.Fill;
-            splitContainer3.Location = new Point(3, 297);
+            splitContainer3.Location = new Point(3, 269);
             splitContainer3.Name = "splitContainer3";
             // 
             // splitContainer3.Panel1
@@ -123,7 +125,7 @@
             // splitContainer3.Panel2
             // 
             splitContainer3.Panel2.Controls.Add(DessertPicture);
-            splitContainer3.Size = new Size(736, 143);
+            splitContainer3.Size = new Size(736, 127);
             splitContainer3.SplitterDistance = 526;
             splitContainer3.TabIndex = 2;
             // 
@@ -139,7 +141,7 @@
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel4.Size = new Size(526, 143);
+            tableLayoutPanel4.Size = new Size(526, 127);
             tableLayoutPanel4.TabIndex = 2;
             // 
             // tableLayoutPanel7
@@ -154,16 +156,16 @@
             tableLayoutPanel7.RowCount = 2;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.Size = new Size(256, 137);
+            tableLayoutPanel7.Size = new Size(256, 121);
             tableLayoutPanel7.TabIndex = 7;
             // 
             // groupBox8
             // 
             groupBox8.Controls.Add(DessertSacchettiText);
             groupBox8.Dock = DockStyle.Fill;
-            groupBox8.Location = new Point(3, 71);
+            groupBox8.Location = new Point(3, 63);
             groupBox8.Name = "groupBox8";
-            groupBox8.Size = new Size(250, 63);
+            groupBox8.Size = new Size(250, 55);
             groupBox8.TabIndex = 1;
             groupBox8.TabStop = false;
             groupBox8.Text = "Sacchetti";
@@ -174,7 +176,7 @@
             DessertSacchettiText.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             DessertSacchettiText.Location = new Point(3, 19);
             DessertSacchettiText.Name = "DessertSacchettiText";
-            DessertSacchettiText.Size = new Size(244, 41);
+            DessertSacchettiText.Size = new Size(244, 33);
             DessertSacchettiText.TabIndex = 1;
             DessertSacchettiText.Text = "0";
             DessertSacchettiText.TextAlign = ContentAlignment.MiddleCenter;
@@ -185,7 +187,7 @@
             groupBox9.Dock = DockStyle.Fill;
             groupBox9.Location = new Point(3, 3);
             groupBox9.Name = "groupBox9";
-            groupBox9.Size = new Size(250, 62);
+            groupBox9.Size = new Size(250, 54);
             groupBox9.TabIndex = 0;
             groupBox9.TabStop = false;
             groupBox9.Text = "Salsa Omaggio";
@@ -196,7 +198,7 @@
             DessertSalsaText.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             DessertSalsaText.Location = new Point(3, 19);
             DessertSalsaText.Name = "DessertSalsaText";
-            DessertSalsaText.Size = new Size(244, 40);
+            DessertSalsaText.Size = new Size(244, 32);
             DessertSalsaText.TabIndex = 0;
             DessertSalsaText.Text = "Nessuna";
             DessertSalsaText.TextAlign = ContentAlignment.MiddleCenter;
@@ -207,7 +209,7 @@
             groupBox3.Dock = DockStyle.Fill;
             groupBox3.Location = new Point(3, 3);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(258, 137);
+            groupBox3.Size = new Size(258, 121);
             groupBox3.TabIndex = 5;
             groupBox3.TabStop = false;
             groupBox3.Text = "Dessert";
@@ -228,7 +230,7 @@
             DessertPicture.Dock = DockStyle.Fill;
             DessertPicture.Location = new Point(0, 0);
             DessertPicture.Name = "DessertPicture";
-            DessertPicture.Size = new Size(206, 143);
+            DessertPicture.Size = new Size(206, 127);
             DessertPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             DessertPicture.TabIndex = 1;
             DessertPicture.TabStop = false;
@@ -236,7 +238,7 @@
             // splitContainer2
             // 
             splitContainer2.Dock = DockStyle.Fill;
-            splitContainer2.Location = new Point(3, 150);
+            splitContainer2.Location = new Point(3, 136);
             splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
@@ -246,7 +248,7 @@
             // splitContainer2.Panel2
             // 
             splitContainer2.Panel2.Controls.Add(SecondoPiattoPicture);
-            splitContainer2.Size = new Size(736, 141);
+            splitContainer2.Size = new Size(736, 127);
             splitContainer2.SplitterDistance = 527;
             splitContainer2.TabIndex = 1;
             // 
@@ -262,7 +264,7 @@
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Size = new Size(527, 141);
+            tableLayoutPanel3.Size = new Size(527, 127);
             tableLayoutPanel3.TabIndex = 1;
             // 
             // tableLayoutPanel6
@@ -277,16 +279,16 @@
             tableLayoutPanel6.RowCount = 2;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Size = new Size(257, 135);
+            tableLayoutPanel6.Size = new Size(257, 121);
             tableLayoutPanel6.TabIndex = 7;
             // 
             // groupBox6
             // 
             groupBox6.Controls.Add(SecondoPiattoSacchettiText);
             groupBox6.Dock = DockStyle.Fill;
-            groupBox6.Location = new Point(3, 70);
+            groupBox6.Location = new Point(3, 63);
             groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(251, 62);
+            groupBox6.Size = new Size(251, 55);
             groupBox6.TabIndex = 1;
             groupBox6.TabStop = false;
             groupBox6.Text = "Sacchetti";
@@ -297,7 +299,7 @@
             SecondoPiattoSacchettiText.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             SecondoPiattoSacchettiText.Location = new Point(3, 19);
             SecondoPiattoSacchettiText.Name = "SecondoPiattoSacchettiText";
-            SecondoPiattoSacchettiText.Size = new Size(245, 40);
+            SecondoPiattoSacchettiText.Size = new Size(245, 33);
             SecondoPiattoSacchettiText.TabIndex = 1;
             SecondoPiattoSacchettiText.Text = "0";
             SecondoPiattoSacchettiText.TextAlign = ContentAlignment.MiddleCenter;
@@ -308,7 +310,7 @@
             groupBox7.Dock = DockStyle.Fill;
             groupBox7.Location = new Point(3, 3);
             groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(251, 61);
+            groupBox7.Size = new Size(251, 54);
             groupBox7.TabIndex = 0;
             groupBox7.TabStop = false;
             groupBox7.Text = "Salsa Omaggio";
@@ -319,7 +321,7 @@
             SecondoPiattoSalsaText.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             SecondoPiattoSalsaText.Location = new Point(3, 19);
             SecondoPiattoSalsaText.Name = "SecondoPiattoSalsaText";
-            SecondoPiattoSalsaText.Size = new Size(245, 39);
+            SecondoPiattoSalsaText.Size = new Size(245, 32);
             SecondoPiattoSalsaText.TabIndex = 0;
             SecondoPiattoSalsaText.Text = "Nessuna";
             SecondoPiattoSalsaText.TextAlign = ContentAlignment.MiddleCenter;
@@ -330,7 +332,7 @@
             groupBox1.Dock = DockStyle.Fill;
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(258, 135);
+            groupBox1.Size = new Size(258, 121);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Secondo Piatto";
@@ -351,7 +353,7 @@
             SecondoPiattoPicture.Dock = DockStyle.Fill;
             SecondoPiattoPicture.Location = new Point(0, 0);
             SecondoPiattoPicture.Name = "SecondoPiattoPicture";
-            SecondoPiattoPicture.Size = new Size(205, 141);
+            SecondoPiattoPicture.Size = new Size(205, 127);
             SecondoPiattoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             SecondoPiattoPicture.TabIndex = 1;
             SecondoPiattoPicture.TabStop = false;
@@ -369,7 +371,7 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(PrimoPiattoPicture);
-            splitContainer1.Size = new Size(736, 141);
+            splitContainer1.Size = new Size(736, 127);
             splitContainer1.SplitterDistance = 526;
             splitContainer1.TabIndex = 0;
             // 
@@ -385,7 +387,7 @@
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(526, 141);
+            tableLayoutPanel2.Size = new Size(526, 127);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // groupBox2
@@ -394,7 +396,7 @@
             groupBox2.Dock = DockStyle.Fill;
             groupBox2.Location = new Point(3, 3);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(258, 135);
+            groupBox2.Size = new Size(258, 121);
             groupBox2.TabIndex = 5;
             groupBox2.TabStop = false;
             groupBox2.Text = "Primo Piatto";
@@ -422,16 +424,16 @@
             tableLayoutPanel5.RowCount = 2;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.Size = new Size(256, 135);
+            tableLayoutPanel5.Size = new Size(256, 121);
             tableLayoutPanel5.TabIndex = 6;
             // 
             // groupBox5
             // 
             groupBox5.Controls.Add(PrimoPiattoSacchettiText);
             groupBox5.Dock = DockStyle.Fill;
-            groupBox5.Location = new Point(3, 70);
+            groupBox5.Location = new Point(3, 63);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(250, 62);
+            groupBox5.Size = new Size(250, 55);
             groupBox5.TabIndex = 1;
             groupBox5.TabStop = false;
             groupBox5.Text = "Sacchetti";
@@ -442,7 +444,7 @@
             PrimoPiattoSacchettiText.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             PrimoPiattoSacchettiText.Location = new Point(3, 19);
             PrimoPiattoSacchettiText.Name = "PrimoPiattoSacchettiText";
-            PrimoPiattoSacchettiText.Size = new Size(244, 40);
+            PrimoPiattoSacchettiText.Size = new Size(244, 33);
             PrimoPiattoSacchettiText.TabIndex = 1;
             PrimoPiattoSacchettiText.Text = "0";
             PrimoPiattoSacchettiText.TextAlign = ContentAlignment.MiddleCenter;
@@ -453,7 +455,7 @@
             groupBox4.Dock = DockStyle.Fill;
             groupBox4.Location = new Point(3, 3);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(250, 61);
+            groupBox4.Size = new Size(250, 54);
             groupBox4.TabIndex = 0;
             groupBox4.TabStop = false;
             groupBox4.Text = "Salsa Omaggio";
@@ -464,7 +466,7 @@
             PrimoPiattoSalsaText.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             PrimoPiattoSalsaText.Location = new Point(3, 19);
             PrimoPiattoSalsaText.Name = "PrimoPiattoSalsaText";
-            PrimoPiattoSalsaText.Size = new Size(244, 39);
+            PrimoPiattoSalsaText.Size = new Size(244, 32);
             PrimoPiattoSalsaText.TabIndex = 0;
             PrimoPiattoSalsaText.Text = "Nessuna";
             PrimoPiattoSalsaText.TextAlign = ContentAlignment.MiddleCenter;
@@ -474,17 +476,30 @@
             PrimoPiattoPicture.Dock = DockStyle.Fill;
             PrimoPiattoPicture.Location = new Point(0, 0);
             PrimoPiattoPicture.Name = "PrimoPiattoPicture";
-            PrimoPiattoPicture.Size = new Size(206, 141);
+            PrimoPiattoPicture.Size = new Size(206, 127);
             PrimoPiattoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             PrimoPiattoPicture.TabIndex = 0;
             PrimoPiattoPicture.TabStop = false;
+            // 
+            // Conferma
+            // 
+            Conferma.Dock = DockStyle.Fill;
+            Conferma.Enabled = false;
+            Conferma.Location = new Point(3, 402);
+            Conferma.Name = "Conferma";
+            Conferma.Size = new Size(736, 35);
+            Conferma.TabIndex = 3;
+            Conferma.Text = "Conferma";
+            Conferma.UseVisualStyleBackColor = true;
+            Conferma.Click += Conferma_Click;
             // 
             // MenuAsporto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(742, 443);
+            ClientSize = new Size(742, 440);
             Controls.Add(tableLayoutPanel1);
+            MinimumSize = new Size(400, 450);
             Name = "MenuAsporto";
             Text = "Principale";
             Load += MenuAsporto_Load;
@@ -555,5 +570,6 @@
         private GroupBox groupBox5;
         private Label PrimoPiattoSacchettiText;
         private Label PrimoPiattoSalsaText;
+        private Button Conferma;
     }
 }

@@ -12,6 +12,16 @@ namespace Piatti
 {
     public partial class MenuAsporto : Form
     {
+        List<bool> _boxBools = new List<bool> { false, false, false };
+        List<bool> Boxbools
+        {
+            get { return _boxBools; }
+            set
+            {
+                _boxBools = value;
+            }
+        }
+
         public MenuAsporto()
         {
             InitializeComponent();
@@ -36,9 +46,10 @@ namespace Piatti
         {
             var s = (Piatto)((System.Windows.Forms.ComboBox)sender).SelectedItem;
             DessertPicture.ImageLocation = s.Immagine;
-            DessertSacchettiText.Text =s.Sacchetti.ToString();
+            DessertSacchettiText.Text = s.Sacchetti.ToString();
             DessertSalsaText.Text = Salsette.ToString(s.Salsetta);
-
+            Boxbools[2] = true;
+            Conferma.Enabled = (_boxBools[0] && _boxBools[1] && _boxBools[2]);
         }
         private void PrimoPiattoBox_SelectedIndexChanged(Object sender, EventArgs e)
         {
@@ -46,6 +57,8 @@ namespace Piatti
             PrimoPiattoPicture.ImageLocation = s.Immagine;
             PrimoPiattoSacchettiText.Text = s.Sacchetti.ToString();
             PrimoPiattoSalsaText.Text = Salsette.ToString(s.Salsetta);
+            Boxbools[0] = true;
+            Conferma.Enabled = (_boxBools[0] && _boxBools[1] && _boxBools[2]);
         }
 
         private void SecondoPiattoBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -54,7 +67,19 @@ namespace Piatti
             SecondoPiattoPicture.ImageLocation = s.Immagine;
             SecondoPiattoSacchettiText.Text = s.Sacchetti.ToString();
             SecondoPiattoSalsaText.Text = Salsette.ToString(s.Salsetta);
+            Boxbools[1] = true;
+            Conferma.Enabled = (_boxBools[0] && _boxBools[1] && _boxBools[2]);
         }
 
+        private void Conferma_Click(object sender, EventArgs e)
+        {
+            var form = new Riepilogo_Popup();
+            form.Sacchetti= 
+                Int32.Parse(SecondoPiattoSacchettiText.Text)
+                + Int32.Parse(PrimoPiattoSacchettiText.Text)
+                + Int32.Parse(DessertSacchettiText.Text);
+            form.PacchettiList = new List<string> { SecondoPiattoSalsaText.Text, PrimoPiattoSalsaText.Text, DessertSalsaText.Text };
+            form.Show();
+        }
     }
 }
